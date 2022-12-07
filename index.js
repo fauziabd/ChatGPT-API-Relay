@@ -30,7 +30,7 @@ async function chat(bearerToken, message, conversationId, parentId) {
             },
         }],
         parent_message_id: parentId || crypto.randomUUID(),
-        model: "text-davinci-003-render",
+        model: "text-davinci-002-render",
     };
 
     if (conversationId) {
