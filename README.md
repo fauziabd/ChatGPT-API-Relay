@@ -25,9 +25,9 @@ If you want to continue a conversation, include the `conversation_id` and `paren
 
 For example if you ask "Tell me the history" (about New York), you can use the following curl command:
 
-`curl -X GET 'https://workers.name.workers.dev/?api_key={token}&message=Tell%20me%20the%20history%3F&conversation_id={conversation_id}&parent_id={message.id}'`
+`curl -X GET 'https://workers.name.workers.dev/?api_key={Bearer Token}&message=Tell%20me%20the%20history%3F&conversation_id={conversation_id}&parent_id={message.id}'`
 
-### How to get Bearer Token
+### How to get the {Bearer Token}
 1. Open `https://chat.openai.com/chat`
 2. Login or create account
 3. Open developer tools (F12) -> Go to Network
@@ -38,7 +38,7 @@ For example if you ask "Tell me the history" (about New York), you can use the f
 ![image](https://user-images.githubusercontent.com/13282094/206120949-ad2f2cff-7335-4a1e-a9fc-81187d51d1fd.png)
 
 
-### Example Response
+### Example response
 `{
   "message": {
     "id": "dff23822-8374-4a43-bd50-1644b5f101c6",
